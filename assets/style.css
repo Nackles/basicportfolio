@@ -1,0 +1,125 @@
+/* "Save and checks" that didn't give me the desired results are commented out for "dont try it again because you forgot you tried" reasons 8) */
+
+/*pseudo classes animate buttons!*/
+
+/* testing *:hover {
+    color:blue;
+} */
+
+body {
+    margin:0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background: wheat;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+}
+
+header {
+    margin:auto;
+    width:960px;
+    color:#4aaaa5;
+}
+
+/* dead tag */
+/* h1 {
+    font-weight:bold;
+    font-size:xx-large;
+} */
+
+.mynamebox {
+    /* float:left; */
+    /* position:absolute; */
+    /* padding:20px; */
+    background-color:lightblue;
+    border-style:solid;
+    border-color:lightblue;
+    font-family: 'Montserrat', sans-serif;  
+    /* width:15%;
+    height:15%; */
+    text-align:center;
+    font-weight: 900;
+    padding:20px;
+    position: relative;
+    float:left;
+}
+
+/* Top bar is ~effectively nav {} even though .mynamebox is on the same visual line */
+.topbar {
+    display:flex;
+    flex-direction: row;
+    margin-right:0%;
+    float:right;
+    padding:20px;
+    /* border-bottom:solid; */
+    /* flex-direction: row; */
+    /* padding:20px; */
+    /* text-align:right; */
+    /* Accidentally split the references between nav and .topbar */
+}
+
+a.nodeco:hover {
+    text-decoration: none;
+}
+
+/*End of topbar, beginning of content */
+
+.separator1 {
+    clear:both;
+    border-top:solid;
+}
+
+.aboutme {
+    clear:both;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    padding-left:2.5%;
+    padding-right:2.55%;
+    width:960px;
+    background-color:#ffffff;
+    border-style:solid;
+    border-color: #dddddd;
+    border-width: 3px;
+    /* font-weight: 600; */
+}
+
+/* .biography {
+
+} */
+
+.pathfinder {   
+    float:left;
+    border-style: dashed;
+    border-color: aqua;
+}
+
+
+/* .separator2 {
+    border-top:solid;
+} */
+
+.footer {
+    background-color:#666666;
+    text-align:center;
+    padding:10px;
+    padding-bottom:0%;
+    width:100%;
+    margin:auto;
+    border-top: 8px solid #4aaaa5;
+    font-size: 12px;
+}
+
+/* #buttons (dead reference){ */
+    /* text-align: right; */
+    /* margin-right: 0%; */
+/* } */
+
+/* nav {
+    position:relative;
+    text-align:right;
+    padding:20px;
+    flex-direction: row;
+    border-bottom:solid;
+} */
+
