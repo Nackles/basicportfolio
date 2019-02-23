@@ -6,29 +6,74 @@
     color:blue;
 } */
 
-html, body {
-    height:100%
+html {
+    background-image: url(../images/granite.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
+html, body {
+    height:100%;
+}
+
+
 body {
     margin:0 auto;
     font-family: 'Open Sans', sans-serif;
-
+    /* width:960px; putting it here makes the whole page that narrow so dont */
     /* https://leaverou.github.io/css3patterns/#half-rombes */
-    background: #36c;
-    background-size: 15px 30px;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.1px;
+    width:100%;
 }
 
 header {
-    margin:auto;
-    height:82px;
-    margin-top:0px;
+    /* margin:auto 0; */
+    /* height:100px; */
+    top:0;
     width:100%;
+    position:fixed;
     color:#4aaaa5;
-    background-color:#ffffff;
+    background-color:whitesmoke;
+    /* margin:auto; */
+    border-bottom:3px solid #cccccc;
 }
+
+li a {
+    text-decoration: none;
+    color:#d3d3d3;
+}
+
+ul {
+    list-style-type:none;
+    display:inline;
+    /* margin:auto; */
+    position:relative;
+    
+}
+
+/* ul:last-child {
+    border-right:none;
+} */
+
+li {
+    float:left;
+    margin:0px;
+    padding:20px;
+    top:50%;
+    overflow:hidden;
+    /* display:flex;
+    flex-wrap:hidden; */
+    /* position:default; */
+    /* padding-left:1%;
+    padding-right:1%; */
+
+}
+
+
+
+
 
 /* dead tag */
 /* h1 {
@@ -39,38 +84,44 @@ header {
 .mynamebox {
     /* float:left; */
     /* position:absolute; */
-    /* padding:20px; */
+    padding:20px;
+    display:flex;
+    flex-direction: row;
     background-color:lightblue;
-    border-style:solid;
-    border-color:lightblue;
+    /* border-style:solid;
+    border-color:lightblue; */
     font-family: 'Montserrat', serif;  
     /* width:15%;
     height:15%; */
     text-align:center;
     font-weight: 900;
-    position: relative;
+    /* position: relative; */
     float:left;
-    padding:20px;
     color:whitesmoke;
     margin-left:25%;
+    margin-right: 20%;
+    border:none;
 }
 
 /* Top bar is ~effectively nav {} even though .mynamebox is on the same visual line */
 .topbar {
     display:flex;
     flex-direction: row;
-    margin-right:25%;
+    flex-wrap: nowrap;
+    text-align:right;
+    background-color: transparent;
+    /* margin-right:25%; */
     float:right;
     padding:20px;
     /* border-bottom:solid; */
     /* flex-direction: row; */
     /* padding:20px; */
-    /* text-align:right; */
     /* Accidentally split the references between nav and .topbar */
 }
 
-a.nodeco:hover {
+a.nodeco {
     text-decoration: none;
+    
 }
 
 /*End of topbar, beginning of content */
@@ -83,8 +134,8 @@ a.nodeco:hover {
 .aboutme {
     clear:both;
     margin:auto;
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top:8%;
+    margin-bottom:8%;
     padding-left:2%;
     padding-right:2.55%;
     width:960px;
@@ -121,22 +172,27 @@ a.nodeco:hover {
 
 .footer {
     background-color:#666666;
-    text-align:center;
+
         /* padding:10px; */
     /* padding-bottom:0%; */
-    min-height:100%;
-    height:90px;
+    /* min-height:100%;part of another way to make the footer stick to the bottom */
+    /* height:90px; mostly just made it format weird*/
     /* margin-bottom:-50%; */
+    position:fixed;
+    bottom:0;
     width:100%;
-    margin:auto;
+    /* margin:auto; */
     border-top: 8px solid #4aaaa5;
-    font-size: 12px;
+
 }
 .copyright {
-    height:50px;
-    padding:'0px 0px 0px 0px';
-    margin-bottom:0px;
-
+    /* height:50px; */
+    /* padding:'0px 0px 0px 0px'; */
+    /* margin-bottom:0px; */
+    padding:0px;
+    font-size: 12px;
+    text-align:center;
+    bottom:0;
 }
 
 /* #buttons (dead reference){ */

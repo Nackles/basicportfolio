@@ -1,4 +1,4 @@
-<!--Still working on my commute and work routine, will be finishing tomorrow(today?)after some sleep.
+    <!--Still working on my commute and work routine, will be finishing tomorrow(today?)after some sleep.
 
 Planned changes:
 -Experimenting with flex box to fix scaling issues
@@ -10,6 +10,7 @@ Planned changes:
 -Add extra aesthetic padding to biography content
 -Harmonize the colors with the adobe color wheel so it's nicer to look at
 
+I don't understand why index.html has a seemingly different font size from contact.html and portfolio.html when I copy and pasted the text over and that was it?
 -->
 
 
@@ -38,26 +39,29 @@ Planned changes:
     <body>
         <header>
 
-            <!--My name in the header tagged for floating left-->
-            <div class="mynamebox">Nackles
-            </div>
+            <ul>
+                <li class="mynamebox">Nackles</li>   
+                <li><a href="index.html">|About|</a></li> 
+                <li><a href="portfolio.html">|Portfolio|</a></li> 
+                <li><a href="contact.html">|Contact|</a></li>
+            <ul>
 
-                <!--Tags this as a navbar for accessability-->
-                <nav class="topbar">
-                               
-                        <!-- <div id="buttons"> -->
-                        <!--Nav buttons CSS: font, size, weight, tagged for floating right-->     
-                            <div><a class ="nodeco" href="#">About</a></div> | 
-                            <div><a class ="nodeco" href="#">Portfolio</a></div> | 
-                            <div><a class ="nodeco" href="#">Contact</a></div>
+                <!--This is where I'd tag my navigation as a navbar [if I wasn't afraid I'd break it again]-->
+                <!-- <nav id="topbar"> -->
+                <!--My name in the header tagged for floating left [flexbox]-->
+            
+                <!--Nav buttons CSS: font, size, weight, tagged for floating right-->     
+
                         <!-- </div> -->
 
+                <!-- </nav> -->
+   
                 
-                
-                </nav>
         </header>
 
+        <!-- pagebreaker-->
         <div class="separator1"></div>
+
 
         <!--Format: Title, separator bar, body of text-->
         <div class="aboutme">
@@ -65,7 +69,7 @@ Planned changes:
             
             <div class="biography">
                
-                <img class="pathfinder" src="images/apexlegends.jpg" height=250px; width=250px;></img>
+                <img class="pathfinder" src="images/profile.jpg" height=250px; width=250px;></img>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto provident perferendis minima ducimus. Sapiente rem aliquam velit aperiam animi sed fuga, nisi quia a ut amet vel minima aspernatur labore.</p>
 
