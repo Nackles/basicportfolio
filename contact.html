@@ -59,25 +59,33 @@ Planned changes:
         </header>
 
         <!-- pagebreaker-->
-        <div class="separator1"></div>
-
 
         <!--Format: Title, separator bar, body of text-->
         <div class="aboutme">
-            <p class="about">About Me</p>
-            
-            <div class="biography">
-               
-                <img class="pathfinder" src="images/profile.jpg" height=250px; width=250px;></img>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto provident perferendis minima ducimus. Sapiente rem aliquam velit aperiam animi sed fuga, nisi quia a ut amet vel minima aspernatur labore.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam sit ex eius debitis quisquam natus ipsam deleniti. Alias incidunt nihil nemo dolores ab atque velit rerum modi qui aliquam.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat autem quod sequi omnis. Nemo aut, consectetur incidunt voluptate vero accusamus, voluptates odio atque laboriosam eum accusantium culpa! Qui, officiis fuga.</p>
-
+            <div class="about">Contact Me
             </div>
 
+                <form action="action_page.php">
+
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="firstname" placeholder="Your name">
+
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="lastname" placeholder="Your email">
+
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" name="subject" placeholder="Leave me a message" style="height:200px">
+                    </textarea>
+
+                    <br>
+                    <input type="submit" value="Submit">
+
+                </form>
         </div>
 
         <!-- <div class="separator2"></div> -->
